@@ -176,103 +176,116 @@ function myMean(x, column) {
   return sum / x.length;
 }
 
-// function myMaxValue(String[][] x, int column) {
-//
-//   let maxValue = 0;
-//
-//   for (let strings of x) {
-//     int val = Integer.parseInt(strings[column]);
-//     if (val > maxValue) {
-//       maxValue = val;
-//     }
-//   }
-//   return maxValue;
-// }
-//
-// public static int myMinValue(String[][] x, int column) {
-//
-//   int minVal = Integer.MAX_VALUE;
-//
-//   for (String[] strings : x) {
-//     int val = Integer.parseInt(strings[column]);
-//     if (val < minVal) {
-//       minVal = val;
-//     }
-//   }
-//   return minVal;
-// }
-//
-//
-// public static int myRangeValue(String[][] x, int column) {
-//
-//   int range;
-//
-//   range = myStatistics.myMaxValue(x, column) - myStatistics.myMinValue(x, column);
-//
-//   return range;
-// }
-//
-// public static String myAccumulated(String[][] x, int column) {
-//
-//   int[] arr = new int[x.length];
-//
-//   for (int i = 0; i < x.length; i++) {
-//     for (int j = 0; j < i; j++) {
-//       arr[i] += Integer.parseInt(x[j][column]);
-//     }
-//   }
-//
-//   return Arrays.toString(arr);
-// }
-//
-// public static double myMedianValue(String[][] x, int column) {
-//
-//   Arrays.sort(x, Comparator.comparingDouble(a -> Double.parseDouble(a[column])));
-//   double median;
-//
-//   if (x.length % 2 != 0) {
-//
-//     median = Integer.parseInt(x[(x.length + 1) / 2][column]);
-//
-//     return median;
-//
-//   } else {
-//
-//     median = (Integer.parseInt(x[x.length / 2][column]) + Integer.parseInt(x[x.length / 2 + 1][column]));
-//
-//     return median;
-//   }
-// }
-//
-//
-// public static double myVarianceValue(String[][] x, int column) {
-//   double variance = 0;
-//   for (String[] strings : x) {
-//     variance += Math.pow(Integer.parseInt(strings[column]) - myStatistics.myMean(x, column), 2);
-//   }
-//   variance /= x.length;
-//
-//   return variance;
-// }
-//
-// public static double myStddeviationValue(String[][] x, int column) {
-//
-//   double sum = 0;
-//
-//   double mean = myMean(x, column);
-//
-//   for (String[] strings : x) {
-//     sum = sum + (Integer.parseInt(strings[column]) - mean) * (Integer.parseInt(strings[column]) - mean);
-//   }
-//   double squaredDiffMean = (sum) / (x.length);
-//
-//   return (Math.sqrt(squaredDiffMean));
-// }
+function myMaxValue(x, column) {
+
+   let maxValue = 0;
+
+   for (let strings of x) {
+     let val = parseInt(strings[column]);
+     if (val > maxValue) {
+       maxValue = val;
+     }
+   }
+   return maxValue;
+ }
+
+function myMinValue(x, column) {
+
+   let minVal = Integer.MAX_VALUE;
+
+   for (strings : x) {
+     int val = parseInt(strings[column]);
+     if (val < minVal) {
+       minVal = val;
+     }
+   }
+   return minVal;
+ }
+
+
+function myRangeValue(x, column) {
+
+   let range;
+
+   range = myMaxValue(x, column) - myMinValue(x, column);
+
+   return range;
+ }
+
+function myAccumulated(x, column) {
+
+   let DATA = new let[DATA.length];
+
+   for (int i = 0; i < DATA.length; i++) {
+     for (int j = 0; j < i; j++) {
+       DATA[i] += parseInt(x[j][column]);
+     }
+   }
+
+   return Arrays.toString(arr);
+ }
+
+function myMedianValue(x, column) {
+
+   Arrays.sort(x, Comparator.comparingDouble(a -> parseDouble(a[column])));
+   double median;
+
+   if (DATA.length % 2 != 0) {
+
+     median = parse(x[(DATA.length + 1) / 2][column]);
+
+     return median;
+
+   } else {
+
+     median = (parseInt(x[x.length / 2][column]) + parseInt(DATA[DATA.length / 2 + 1][column]));
+
+     return median;
+   }
+ }
+
+
+function myVarianceValue(x, column) {
+   double variance = 0;
+   for (String[] strings : x) {
+     variance += Math.pow(parseInt(strings[column]) - myMean(x, column), 2);
+   }
+   variance /= DATA.length;
+
+   return variance;
+ }
+
+ function myStddeviationValue(x, column) {
+
+   double sum = 0;
+
+   double mean = myMean(x, column);
+
+   for (String[] strings : x) {
+     sum = sum + (Integer.parseInt(strings[column]) - mean) * (Integer.parseInt(strings[column]) - mean);
+   }
+   double squaredDiffMean = (sum) / (x.length);
+
+   return (Math.sqrt(squaredDiffMean));
+ }
 
 //========[CODE]===============
 
 let meanElement = document.getElementById('meanElement');
+let maximumElement = document.getElementById('maximumElement');
 let minimumElement = document.getElementById('minimumElement');
+let rangeElement = document.getElementById('rangeElement');
+let accumulatedElement = document.getElementById('accumulatedElement');
+let medianElement = document.getElementById('medianElement');
+let varianceElement = document.getElementById('varianceElement');
+let stddeviationElement = document.getElementById('stddeviationElement');
+
 
 meanElement.innerHTML = Math.round(myMean(arr, 5));
-minimumElement.innerHTML = myMin(arr);
+maximumElement.innerHTML = Math.round(MyMaxValue(arr, 5));
+minimumElement.innerHTML = Math.round(MyMinValue(arr, 5));
+rangeElement.innerHTML = Math.round(MyRangeValue(arr, 5));
+accumulatedElement.innerHTML = Math.round(myAccumulated(arr, 5));
+medianElement.innerHTML = Math.round(MyMedianValue(arr, 5));
+varianceElement.innerHTML = Math.round(myVarianceValue(arr, 5));
+stddeviationElement.innerHTML = Math.round(myStddeviationValue(arr, 5));
