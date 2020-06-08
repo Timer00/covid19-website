@@ -45,7 +45,7 @@
                   <div class="text ml-2">
                     <p class="mb-0">You have 2 followers</p>
                   </div>
-                </div></a><a href="#" class="dropdown-item"> 
+                </div></a><a href="#" class="dropdown-item">
                 <div class="d-flex align-items-center">
                   <div class="icon icon-sm bg-green text-white"><i class="fas fa-envelope"></i></div>
                   <div class="text ml-2">
@@ -82,6 +82,7 @@
         <ul class="sidebar-menu list-unstyled">
               <li class="sidebar-list-item"><a href="index.html" class="sidebar-link text-muted"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
               <li class="sidebar-list-item"><a href="charts.html" class="sidebar-link text-muted active"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Charts</span></a></li>
+          <li class="sidebar-list-item"><a href="newPage.html" class="sidebar-link text-muted"><i class="fa fa-rss mr-3 text-gray"></i><span>News</span></a></li>
               <li class="sidebar-list-item"><a href="tables.html" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Tables</span></a></li>
               <li class="sidebar-list-item"><a href="forms.html" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>Forms</span></a></li>
           <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Pages</span></a>
@@ -108,14 +109,24 @@
         <div class="container-fluid px-xl-5">
           <section class="py-5">
             <div class="row mb-4">
-              <div class="col-lg-8 mb-4 mb-lg-0">
-                <div class="card">
+              <div class="col-lg-4">
+                <div class="card mb-4">
                   <div class="card-header">
                     <h2 class="h6 text-uppercase mb-0">Minimum Value</h2>
                   </div>
                   <div class="card-body">
-                    <div class="chart-holder mt-5 mb-5">
-                         <script></script>
+                    <div id="minimumElement" class="chart-holder">
+                         TEST
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Minimum Value</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="varianceElement" class="chart-holder">
+                      TEST
                     </div>
                   </div>
                 </div>
@@ -126,31 +137,40 @@
                     <h2 class="h6 text-uppercase mb-0">Mean Value</h2>
                   </div>
                   <div class="card-body">
-                    <div class="chart-holder">
-                     <script src="js/DataAnalysis2.js.js">
-                        document.getElementById8"array".innerHTML
-                        document.getElement("myMean").innerHTML
-                        </script>
+                    <div id="someElement" class="chart-holder">
+                      HERE
                     </div>
                   </div>
                 </div>
-                <div class="card mb-3">
+                <div class="card mb-4">
                   <div class="card-header">
                     <h2 class="h6 text-uppercase mb-0">Maximum deaths</h2>
                   </div>
                   <div class="card-body">
                     <div class="chart-holder">
-                        <script type="text/javascript">
-                      //max value
-                        var max = arr[0];
-        
-                        for(var i = 0; i < arr.length; i++){
-                            if (arr[i] >= max) {
-                            max = arr[i];
-                            }
-                        }
-                        document.write(max);
-                        </script>
+                      Something
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Mean Value</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="meanElement" class="chart-holder">
+                      HERE
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Maximum deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-holder">
+                      Something
                     </div>
                   </div>
                 </div>
@@ -267,6 +287,7 @@
       </div>
     </div>
     <!-- JavaScript files-->
+    <script src="js/DataAnalysis2.js.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
