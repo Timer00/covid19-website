@@ -67,8 +67,8 @@ $(function () {
        },
        data: {
            labels: [
-               "Infection",
-               "Death"
+               "Infections",
+               "Deaths"
            ],
            datasets: [
                {
