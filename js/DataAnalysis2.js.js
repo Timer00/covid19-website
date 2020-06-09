@@ -191,7 +191,7 @@ function myMaxValue(x, column) {
 
 function myMinValue(x, column) {
 
-   let minVal = Integer.MAX_VALUE;
+   let minVal = myMaxValue;
 
    for (strings : x) {
      int val = parseInt(strings[column]);
@@ -246,8 +246,8 @@ function myMedianValue(x, column) {
 
 
 function myVarianceValue(x, column) {
-   double variance = 0;
-   for (String[] strings : x) {
+   variance = 0;
+   for (strings : x) {
      variance += Math.pow(parseInt(strings[column]) - myMean(x, column), 2);
    }
    variance /= DATA.length;
@@ -257,14 +257,14 @@ function myVarianceValue(x, column) {
 
  function myStddeviationValue(x, column) {
 
-   double sum = 0;
+   sum = 0;
 
-   double mean = myMean(x, column);
+   mean = myMean(x, column);
 
-   for (String[] strings : x) {
-     sum = sum + (Integer.parseInt(strings[column]) - mean) * (Integer.parseInt(strings[column]) - mean);
+   for (strings : x) {
+     sum = sum + (parseInt(strings[column]) - mean) * (parseInt(strings[column]) - mean);
    }
-   double squaredDiffMean = (sum) / (x.length);
+   squaredDiffMean = (sum) / (x.length);
 
    return (Math.sqrt(squaredDiffMean));
  }

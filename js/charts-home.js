@@ -213,11 +213,11 @@ $(function () {
         },
         data: {
             labels: [
-                "First",
-                "Second"
+                "Deaths",
+                "Infections"
             ],
             datasets: [{
-                data: [300, 50],
+                data: [409322, 7226863],
                 borderWidth: [0, 0],
                 backgroundColor: [
                     blue,
@@ -246,11 +246,11 @@ $(function () {
         },
         data: {
             labels: [
-                "First",
-                "Second"
+                "Recovered",
+                "Infections"
             ],
             datasets: [{
-                data: [300, 50],
+                data: [3559897, 7226863],
                 borderWidth: [0, 0],
                 backgroundColor: [
                     violet,
