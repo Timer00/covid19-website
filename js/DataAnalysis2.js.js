@@ -1,4 +1,6 @@
-// ["date", "day", "month", "year", "cases", "deaths", "country", "code", "population", "continentExp", "cases_cum", "deaths_cum"]
+// ["0", "1", "2", "3", "4", "5", "6", "code", "population", "continentExp", "cases_cum", "deaths_cum"]
+
+// ["ID","date", "day", "month", "year", "cases", "deaths", "country", "code", "population", "continentExp", "cases_cum", "deaths_cum"]
 
 let DATA = [
   ["0", "2019-12-31", 31, 12, 2019, 0, 0, "Germany", "DE", 82927922, "Europe", 0, "0"],
@@ -169,7 +171,6 @@ function myMean(x, column) {
   let sum = 0;
 
   for (let strings of x) {
-    console.log(strings[column]);
     sum += parseInt(strings[column]);
   }
 
@@ -178,96 +179,89 @@ function myMean(x, column) {
 
 function myMaxValue(x, column) {
 
-   let maxValue = 0;
+  let maxValue = 0;
 
-   for (let strings of x) {
-     let val = parseInt(strings[column]);
-     if (val > maxValue) {
-       maxValue = val;
-     }
-   }
-   return maxValue;
- }
+  for (let strings of x) {
+    let val = parseInt(strings[column]);
+    if (val > maxValue) {
+      maxValue = val;
+    }
+  }
+  return maxValue;
+}
 
 function myMinValue(x, column) {
 
-   let minVal = myMaxValue;
+  let minVal = myMaxValue(x, column);
 
-   for (strings : x) {
-     int val = parseInt(strings[column]);
-     if (val < minVal) {
-       minVal = val;
-     }
-   }
-   return minVal;
- }
+  for (let strings of x) {
+    let val = parseInt(strings[column]);
+    if (val < minVal) {
+      minVal = val;
+    }
+  }
+  return minVal;
+}
 
 
 function myRangeValue(x, column) {
 
-   let range;
+  let range;
 
-   range = myMaxValue(x, column) - myMinValue(x, column);
+  range = myMaxValue(x, column) - myMinValue(x, column);
 
-   return range;
- }
-
-function myAccumulated(x, column) {
-
-   let DATA = new let[DATA.length];
-
-   for (int i = 0; i < DATA.length; i++) {
-     for (int j = 0; j < i; j++) {
-       DATA[i] += parseInt(x[j][column]);
-     }
-   }
-
-   return Arrays.toString(arr);
- }
+  return range;
+}
 
 function myMedianValue(x, column) {
 
-   Arrays.sort(x, Comparator.comparingDouble(a -> parseDouble(a[column])));
-   double median;
+  let arr = [];
+  for (let i of x) {
+    arr.push(i[column]);
+  }
 
-   if (DATA.length % 2 != 0) {
+  arr = arr.sort();
 
-     median = parse(x[(DATA.length + 1) / 2][column]);
+  let median;
 
-     return median;
+  if (x.length % 2 !== 0) {
 
-   } else {
+    median = parseInt(x[(x.length + 1) / 2][column]);
 
-     median = (parseInt(x[x.length / 2][column]) + parseInt(DATA[DATA.length / 2 + 1][column]));
+    return median;
 
-     return median;
-   }
- }
+  } else {
+
+    median = (parseInt(x[x.length / 2][column]) + parseInt(x[x.length / 2 + 1][column]));
+
+    return median;
+  }
+}
 
 
 function myVarianceValue(x, column) {
-   variance = 0;
-   for (strings : x) {
-     variance += Math.pow(parseInt(strings[column]) - myMean(x, column), 2);
-   }
-   variance /= DATA.length;
+  let variance = 0;
+  for (let strings of x) {
+    variance += Math.pow(parseInt(strings[column]) - myMean(x, column), 2);
+  }
+  variance /= DATA.length;
 
-   return variance;
- }
+  return variance;
+}
 
- function myStddeviationValue(x, column) {
+function myStddeviationValue(x, column) {
 
-   sum = 0;
+  let sum = 0;
 
-   mean = myMean(x, column);
+  let mean = myMean(x, column);
 
-   for (strings : x) {
-     sum = sum + (parseInt(strings[column]) - mean) * (parseInt(strings[column]) - mean);
-   }
-   squaredDiffMean = (sum) / (x.length);
+  for (let strings of x) {
+    sum = sum + (parseInt(strings[column]) - mean) * (parseInt(strings[column]) - mean);
+  }
+  let squaredDiffMean = (sum) / (x.length);
 
-   return (Math.sqrt(squaredDiffMean));
- }
+  return (Math.sqrt(squaredDiffMean));
+}
 
 //========[CODE]===============
 
@@ -282,31 +276,27 @@ let stddeviationElement = document.getElementById('stddeviationElement');
 
 
 meanElement.innerHTML = Math.round(myMean(arr, 5));
-maximumElement.innerHTML = Math.round(MyMaxValue(arr, 5));
-minimumElement.innerHTML = Math.round(MyMinValue(arr, 5));
-rangeElement.innerHTML = Math.round(MyRangeValue(arr, 5));
-accumulatedElement.innerHTML = Math.round(myAccumulated(arr, 5));
-medianElement.innerHTML = Math.round(MyMedianValue(arr, 5));
+maximumElement.innerHTML = Math.round(myMaxValue(arr, 5));
+minimumElement.innerHTML = Math.round(myMinValue(arr, 5));
+rangeElement.innerHTML = Math.round(myRangeValue(arr, 5));
+// medianElement.innerHTML = Math.round(myMedianValue(arr, 5));
 varianceElement.innerHTML = Math.round(myVarianceValue(arr, 5));
 stddeviationElement.innerHTML = Math.round(myStddeviationValue(arr, 5));
-
 
 
 let meanElement2 = document.getElementById('meanElement2');
 let maximumElement2 = document.getElementById('maximumElement2');
 let minimumElement2 = document.getElementById('minimumElement2');
 let rangeElement2 = document.getElementById('rangeElement2');
-let accumulatedElement2 = document.getElementById('accumulatedElement2');
 let medianElement2 = document.getElementById('medianElement2');
 let varianceElement2 = document.getElementById('varianceElement2');
 let stddeviationElement2 = document.getElementById('stddeviationElement2');
 
 
 meanElement2.innerHTML = Math.round(myMean(arr, 6));
-maximumElement2.innerHTML = Math.round(MyMaxValue(arr, 6));
-minimumElement2.innerHTML = Math.round(MyMinValue(arr, 6));
-rangeElement2.innerHTML = Math.round(MyRangeValue(arr, 6));
-accumulatedElement2.innerHTML = Math.round(myAccumulated(arr, 6));
-medianElement2.innerHTML = Math.round(MyMedianValue(arr, 6));
+maximumElement2.innerHTML = Math.round(myMaxValue(arr, 6));
+minimumElement2.innerHTML = Math.round(myMinValue(arr, 6));
+rangeElement2.innerHTML = Math.round(myRangeValue(arr, 6));
+// medianElement2.innerHTML = Math.round(myMedianValue(arr, 6));
 varianceElement2.innerHTML = Math.round(myVarianceValue(arr, 6));
 stddeviationElement2.innerHTML = Math.round(myStddeviationValue(arr, 6));
