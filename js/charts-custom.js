@@ -32,13 +32,13 @@ $(function () {
        },
        data: {
            labels: [
-               "First",
-               "Second",
+               "Deaths",
+               "Infections",
                "Third"
            ],
            datasets: [
                {
-                   data: [250, 200],
+                   data: [8581, 182764],
                    borderWidth: [0, 0],
                    backgroundColor: [
                        green,

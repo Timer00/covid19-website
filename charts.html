@@ -108,6 +108,11 @@
       <div class="page-holder w-100 d-flex flex-wrap">
         <div class="container-fluid px-xl-5">
           <section class="py-5">
+            <h2>STATISTICS GERMANY</h2>
+            <br>
+            <br>
+            <h3>Deaths</h3>
+            <br>
             <div class="row mb-4">
               <div class="col-lg-4">
                 <div class="card mb-4">
@@ -186,11 +191,97 @@
               </div>
             </div>
         </div>
+            <br>
+            <br>
+            <br>
+            <h3>Infections</h3>
+            <br>
             <div class="row mb-4">
               <div class="col-lg-4">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Europe vs Germany</h2>
+                    <h2 class="h6 text-uppercase mb-0">Maximum value deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="maximumElement" class="chart-holder">
+                      TEST
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Minimum Value deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="minimumElement" class="chart-holder">
+                      TEST
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Mean Value death</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="meanElement" class="chart-holder">
+                      HERE
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Range deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="rangeElement" class="chart-holder">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Variance deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="varianceElement" class="chart-holder">
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Standard deviation deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="stddeviationElement" class="chart-holder">
+                      Something
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <h2 class="h6 text-uppercase mb-0">Accumulated Data</h2>
+                </div>
+                <div class="card-body">
+                  <div id="accumulatedElement" class="chart-holder">
+                    TEST
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="row mb-4">
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Infections vs Deaths</h2>
+                    <hr><small class="text-muted">as of 2020-06-04</small>
                   </div>
                   <div class="card-body">
                     <div class="chart-holder">
@@ -201,7 +292,7 @@
                 <div class="card mb-4">
                   <div class="card-header">
                     <h2 class="h6 text-uppercase mb-0">Death vs Infection Europe</h2>
-                    <hr><small class="text-muted">up to 9th of June</small>
+                    <hr><small class="text-muted">as of 2020-06-04</small>
                   </div>
                   <div class="card-body">
                     <div class="chart-holder">
@@ -219,62 +310,6 @@
                     <p class="mb-5 text-gray">death rate from... to...</p>
                     <div class="chart-holder mt-5 mb-5">
                       <canvas id="barChartExample1"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Doughnut chart Example</h2>
-                  </div>
-                  <div class="card-body">
-                    <p class="mb-3 text-gray">Lorem ipsum dolor sit amet.</p>
-                    <div class="chart-holder">
-                      <canvas id="doughnutChartExample"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Pie chart Example</h2>
-                  </div>
-                  <div class="card-body">
-                    <p class="mb-3 text-gray">Lorem ipsum dolor sit amet.</p>
-                    <div class="chart-holder">
-                      <canvas id="pieChartExample"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Polar chart Example</h2>
-                  </div>
-                  <div class="card-body">
-                    <p class="mb-3 text-gray">Lorem ipsum dolor sit amet.</p>
-                    <div class="chart-holder">
-                      <canvas id="polarChartExample"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Radar chart Example</h2>
-                  </div>
-                  <div class="card-body">
-                    <p class="mb-3 text-gray">Lorem ipsum dolor sit amet.</p>
-                    <div class="chart-holder">
-                      <canvas id="radarChartExample"></canvas>
                     </div>
                   </div>
                 </div>
