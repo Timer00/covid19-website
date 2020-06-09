@@ -289,3 +289,24 @@ accumulatedElement.innerHTML = Math.round(myAccumulated(arr, 5));
 medianElement.innerHTML = Math.round(MyMedianValue(arr, 5));
 varianceElement.innerHTML = Math.round(myVarianceValue(arr, 5));
 stddeviationElement.innerHTML = Math.round(myStddeviationValue(arr, 5));
+
+
+
+let meanElement2 = document.getElementById('meanElement2');
+let maximumElement2 = document.getElementById('maximumElement2');
+let minimumElement2 = document.getElementById('minimumElement2');
+let rangeElement2 = document.getElementById('rangeElement2');
+let accumulatedElement2 = document.getElementById('accumulatedElement2');
+let medianElement2 = document.getElementById('medianElement2');
+let varianceElement2 = document.getElementById('varianceElement2');
+let stddeviationElement2 = document.getElementById('stddeviationElement2');
+
+
+meanElement2.innerHTML = Math.round(myMean(arr, 6));
+maximumElement2.innerHTML = Math.round(MyMaxValue(arr, 6));
+minimumElement2.innerHTML = Math.round(MyMinValue(arr, 6));
+rangeElement2.innerHTML = Math.round(MyRangeValue(arr, 6));
+accumulatedElement2.innerHTML = Math.round(myAccumulated(arr, 6));
+medianElement2.innerHTML = Math.round(MyMedianValue(arr, 6));
+varianceElement2.innerHTML = Math.round(myVarianceValue(arr, 6));
+stddeviationElement2.innerHTML = Math.round(myStddeviationValue(arr, 6));
