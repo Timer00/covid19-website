@@ -276,10 +276,10 @@ let stddeviationElement = document.getElementById('stddeviationElement');
 
 
 meanElement.innerHTML = Math.round(myMean(arr, 5));
-maximumElement.innerHTML = Math.round(myMaxValue(arr, 5));
-minimumElement.innerHTML = Math.round(myMinValue(arr, 5));
-rangeElement.innerHTML = Math.round(myRangeValue(arr, 5));
-// medianElement.innerHTML = Math.round(myMedianValue(arr, 5));
+maximumElement.innerHTML = myMaxValue(arr, 5);
+minimumElement.innerHTML = myMinValue(arr, 5);
+rangeElement.innerHTML = myRangeValue(arr, 5);
+medianElement.innerHTML = Math.round(myMedianValue(arr, 5));
 varianceElement.innerHTML = Math.round(myVarianceValue(arr, 5));
 stddeviationElement.innerHTML = Math.round(myStddeviationValue(arr, 5));
 
@@ -294,9 +294,9 @@ let stddeviationElement2 = document.getElementById('stddeviationElement2');
 
 
 meanElement2.innerHTML = Math.round(myMean(arr, 6));
-maximumElement2.innerHTML = Math.round(myMaxValue(arr, 6));
-minimumElement2.innerHTML = Math.round(myMinValue(arr, 6));
-rangeElement2.innerHTML = Math.round(myRangeValue(arr, 6));
-// medianElement2.innerHTML = Math.round(myMedianValue(arr, 6));
+maximumElement2.innerHTML = myMaxValue(arr, 6);
+minimumElement2.innerHTML = myMinValue(arr, 6);
+rangeElement2.innerHTML = myRangeValue(arr, 6);
+medianElement2.innerHTML = Math.round(myMedianValue(arr, 6));
 varianceElement2.innerHTML = Math.round(myVarianceValue(arr, 6));
 stddeviationElement2.innerHTML = Math.round(myStddeviationValue(arr, 6));

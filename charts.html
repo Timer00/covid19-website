@@ -111,10 +111,10 @@
             <h2>STATISTICS GERMANY</h2>
             <br>
             <div class="box1">
-              <div style="float:right;"> <img src="img/Statistics.jpg" alt="charts and graphs", height="202.5" width="360"></div>
+              <div style="float:right;"> <img src="img/Statistics.jpg" alt="charts and graphs", height="236.25" width="420"></div>
               <p>Statistical methods are very important tools to analyze data and identify and interpret relations among them.<br>
-                Statistics is a crucial process behind how we make discoveries in science, make decisions based on data, and make predictions,<br>
-                statistics allows you to understand a subject much more deeply.
+                Statistics is a crucial process behind how we make discoveries in science, make decisions based on data, and make predictions.<br>
+                Statistics allows you to understand a subject much more deeply.
                 <br>
                 <br>
                 These are just some of the reasons why people use statistics when having a larger amount of data.
@@ -122,6 +122,7 @@
                 <br>
                 In the following, basic statistic operations like mean value, median value or variance are applied to the COVID-19 data in Germany.</p>
             </div>
+            <br>
             <br>
             <h3>DEATHS</h3>
             <br>
@@ -195,6 +196,20 @@
                 </div>
               </div>
             </div>
+            <div class="row mb-4">
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Median value deaths</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="medianElement2" class="chart-holder">
+                      TEST
+                    </div>
+                  </div>
+                </div>
+              </section>
+          <section>
             <br>
             <br>
             <br>
@@ -208,7 +223,7 @@
               <div class="col-lg-4">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Maximum value deaths</h2>
+                    <h2 class="h6 text-uppercase mb-0">Maximum value infections</h2>
                   </div>
                   <div class="card-body">
                     <div id="maximumElement" class="chart-holder">
@@ -218,7 +233,7 @@
                 </div>
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Minimum Value deaths</h2>
+                    <h2 class="h6 text-uppercase mb-0">Minimum Value infections</h2>
                   </div>
                   <div class="card-body">
                     <div id="minimumElement" class="chart-holder">
@@ -230,7 +245,7 @@
               <div class="col-lg-4">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Mean Value death</h2>
+                    <h2 class="h6 text-uppercase mb-0">Mean Value infections</h2>
                   </div>
                   <div class="card-body">
                     <div id="meanElement" class="chart-holder">
@@ -240,7 +255,7 @@
                 </div>
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Range deaths</h2>
+                    <h2 class="h6 text-uppercase mb-0">Range infections</h2>
                   </div>
                   <div class="card-body">
                     <div id="rangeElement" class="chart-holder">
@@ -251,7 +266,7 @@
               <div class="col-lg-4">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Variance deaths</h2>
+                    <h2 class="h6 text-uppercase mb-0">Variance infections</h2>
                   </div>
                   <div class="card-body">
                     <div id="varianceElement" class="chart-holder">
@@ -260,7 +275,7 @@
                 </div>
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Standard deviation deaths</h2>
+                    <h2 class="h6 text-uppercase mb-0">Standard deviation infections</h2>
                   </div>
                   <div class="card-body">
                     <div id="stddeviationElement" class="chart-holder">
@@ -270,35 +285,38 @@
                 </div>
               </div>
             </div>
+            <div class="row mb-4">
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h2 class="h6 text-uppercase mb-0">Median value infections</h2>
+                  </div>
+                  <div class="card-body">
+                    <div id="medianElement" class="chart-holder">
+                      TEST
+                    </div>
+                  </div>
+                </div>
+              </section>
+          <section>
             <br>
             <br>
             <h3>ADDITIONAL GRAPHS</h3>
             <br>
             <div class="box1">
-              <p>Additional graphs for a better understanding</p>
+              <p>Following are some additional graphs of data from Europe displayed.</p>
               <br>
             <br>
             <div class="row mb-4">
               <div class="col-lg-4">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Infections vs Deaths</h2>
+                    <h2 class="h6 text-uppercase mb-0">Infections vs Deaths Europe</h2>
                     <hr><small class="text-muted">as of 2020-06-04</small>
                   </div>
                   <div class="card-body">
                     <div class="chart-holder">
                       <canvas id="pieChart1"></canvas>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <h2 class="h6 text-uppercase mb-0">Death vs Infection Europe</h2>
-                    <hr><small class="text-muted">as of 2020-06-04</small>
-                  </div>
-                  <div class="card-body">
-                    <div class="chart-holder">
-                      <canvas id="pieChart2"></canvas>
                     </div>
                   </div>
                 </div>
@@ -309,7 +327,7 @@
                     <h2 class="h6 mb-0 text-uppercase">Covid-19 deaths Europe</h2>
                   </div>
                   <div class="card-body">
-                    <p class="mb-5 text-gray">death rate from... to...</p>
+                    <p class="mb-5 text-gray">accumulated death data from January to June</p>
                     <div class="chart-holder mt-5 mb-5">
                       <canvas id="barChartExample1"></canvas>
                     </div>
