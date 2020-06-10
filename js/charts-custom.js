@@ -32,13 +32,13 @@ $(function () {
        },
        data: {
            labels: [
-               "First",
-               "Second",
+               "Deaths",
+               "Infections",
                "Third"
            ],
            datasets: [
                {
-                   data: [250, 200],
+                   data: [8581, 182764],
                    borderWidth: [0, 0],
                    backgroundColor: [
                        green,
@@ -67,12 +67,12 @@ $(function () {
        },
        data: {
            labels: [
-               "First",
-               "Second"
+               "Infections",
+               "Deaths"
            ],
            datasets: [
                {
-                   data: [300, 50],
+                   data: [182764, 8581],
                    borderWidth: [0, 0],
                    backgroundColor: [
                        violet,
@@ -279,7 +279,7 @@ $(function () {
                         gradient2
                     ],
                     borderWidth: 1,
-                    data: [65, 59, 80, 81, 56, 55, 40, 30, 45, 80, 44, 36, 66, 58],
+                    data: [100, 59, 80, 81, 56, 55, 40, 30, 45, 80, 44, 36, 66, 58],
                 }
             ]
         }
@@ -304,8 +304,8 @@ $(function () {
                 yAxes: [{
                     display: true,
                     ticks: {
-                        max: 100,
-                        min: 20
+                        max: 8750,
+                        min: 0
                     },
                     gridLines: {
                         color: '#fff'
@@ -315,7 +315,7 @@ $(function () {
             legend: false
         },
         data: {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+            labels: ["Jan 01", "Jan 15", "Feb 01", "Feb 15", "Ma 01", "Ma 15", "Ap 01", "Ap 15", "May 01", "May 15", "June 01"],
             datasets: [
                 {
                     label: "Data Set 1",
@@ -368,7 +368,7 @@ $(function () {
                         gradient2
                     ],
                     borderWidth: 1,
-                    data: [65, 59, 80, 81, 56, 55, 40, 30, 45, 80, 44, 36, 66, 58],
+                    data: [0, 0, 0, 0, 0, 8, 732, 3254, 6288, 7824, 8511, 36, 66, 58],
                 }
             ]
         }

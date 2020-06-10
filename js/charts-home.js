@@ -20,7 +20,7 @@ $(function () {
                 }],
                 yAxes: [{
                     ticks: {
-                        max: 50,
+                        max: 6100000,
                         min: 0
                     },
                     display: false
@@ -31,7 +31,7 @@ $(function () {
             }
         },
         data: {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+            labels: ["hi", "ho", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
             datasets: [{
                 label: "Page Visitors",
                 fill: true,
@@ -52,7 +52,7 @@ $(function () {
                 pointHoverBorderWidth: 1,
                 pointRadius: 0,
                 pointHitRadius: 1,
-                data: [20, 14, 21, 15, 22, 8, 18, 13, 21, 13, 17, 13, 20, 15],
+                data: [0, 43, 11962, 67187, 87831, 165201, 827404, 1921602, 3181634, 4368776, 6080963],
                 spanGaps: false
             }]
         }
@@ -73,8 +73,8 @@ $(function () {
                 }],
                 yAxes: [{
                     ticks: {
-                        max: 50,
-                        min: 0
+                        max: 400000,
+                        min: 4
                     },
                     display: false
                 }]
@@ -84,7 +84,7 @@ $(function () {
             }
         },
         data: {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
             datasets: [{
                 label: "Page Visitors",
                 fill: true,
@@ -105,7 +105,7 @@ $(function () {
                 pointHoverBorderWidth: 1,
                 pointRadius: 0,
                 pointHitRadius: 1,
-                data: [20, 14, 21, 15, 22, 8, 18, 13, 21, 13, 17, 13, 20, 15],
+                data: [4, 305, 1669, 3043, 7427, 40598, 123010, 229971, 297199, 371166],
                 spanGaps: false
             }]
         }
@@ -213,11 +213,11 @@ $(function () {
         },
         data: {
             labels: [
-                "First",
-                "Second"
+                "Deaths",
+                "Infections"
             ],
             datasets: [{
-                data: [300, 50],
+                data: [409322, 7226863],
                 borderWidth: [0, 0],
                 backgroundColor: [
                     blue,
@@ -246,11 +246,11 @@ $(function () {
         },
         data: {
             labels: [
-                "First",
-                "Second"
+                "Recovered",
+                "Infections"
             ],
             datasets: [{
-                data: [300, 50],
+                data: [3559897, 7226863],
                 borderWidth: [0, 0],
                 backgroundColor: [
                     violet,
