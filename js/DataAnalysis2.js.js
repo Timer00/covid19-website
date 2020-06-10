@@ -269,7 +269,6 @@ let meanElement = document.getElementById('meanElement');
 let maximumElement = document.getElementById('maximumElement');
 let minimumElement = document.getElementById('minimumElement');
 let rangeElement = document.getElementById('rangeElement');
-let accumulatedElement = document.getElementById('accumulatedElement');
 let medianElement = document.getElementById('medianElement');
 let varianceElement = document.getElementById('varianceElement');
 let stddeviationElement = document.getElementById('stddeviationElement');
